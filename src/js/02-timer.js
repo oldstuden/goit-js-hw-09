@@ -2,7 +2,7 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import Notiflix from 'notiflix';
 
-const flatpickr = require('flatpickr');
+// const flatpickr = require('flatpickr');
 const btnStart = document.querySelector('button[data-start]');
 const days = document.querySelector('span[data-days]');
 const hours = document.querySelector('span[data-hours]');
@@ -30,7 +30,7 @@ const options = {
   },
 };
 
-flatpickr('#datetime-picker', options);
+const datePicker = flatpickr('#datetime-picker', options);
 
 function handlerStart() {
   const id = setInterval(() => {
